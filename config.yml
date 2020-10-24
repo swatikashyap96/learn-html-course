@@ -1,0 +1,16 @@
+title: learn html
+description: in this repo we are only uploade notes related to html
+template:
+  repo: learn-html-template
+  name: learn-html
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
